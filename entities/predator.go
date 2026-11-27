@@ -28,6 +28,10 @@ func (p *Predator) SetEnergy(newEnergy int) {
 	p.Energy = newEnergy
 }
 
+func (p *Predator) GetEnergy() int {
+	return p.Energy
+}
+
 func (p *Predator) Target() EntityType {
 	return TypeHerbivore
 }
