@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"gosim/actions"
+	"gosim/field"
+	"gosim/render"
+)
 
 func main() {
-	fmt.Println("Simulation")
+	fld := field.NewField(10, 10)
+	actions.InitField(fld)
+	render.PrintField(*fld)
 }
