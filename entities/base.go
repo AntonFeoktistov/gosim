@@ -27,6 +27,7 @@ type Creature interface {
 	Occupier
 	SetPos(newPos position.Position)
 	SetEnergy(newSpeed int)
+	Target() EntityType
 }
 
 type Eatable interface {

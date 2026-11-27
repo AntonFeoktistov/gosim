@@ -31,3 +31,7 @@ func (h *Herbivore) SetEnergy(newEnergy int) {
 func (h *Herbivore) SetHp(newHp int) {
 	h.Hp = newHp
 }
+
+func (h *Herbivore) Target() EntityType {
+	return TypeGrass
+}

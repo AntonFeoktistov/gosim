@@ -38,9 +38,9 @@ func chooseRandomCreatureOrNil(pos position.Position) (entities.Creature, bool) 
 	n := rand.Intn(100) + 1 // [1, 100]
 
 	switch {
-	case n <= 20:
+	case n <= 10:
 		return entities.NewHerbivore(pos), true
-	case n <= 30:
+	case n <= 20:
 		return entities.NewPredator(pos), true
 	default:
 		return nil, false

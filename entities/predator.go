@@ -27,3 +27,7 @@ func (p *Predator) SetPos(newPos position.Position) {
 func (p *Predator) SetEnergy(newEnergy int) {
 	p.Energy = newEnergy
 }
+
+func (p *Predator) Target() EntityType {
+	return TypeHerbivore
+}
